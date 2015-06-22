@@ -12,3 +12,11 @@ DEVELOPPER EMAIL: 109856604582-208qmf2tc8gbqpki4hkajgsl2mgh3va5@developer.gservi
 TIME MIN: 2015-06-21T00:00:52-05:00
 
 TIME MAX: 2015-06-21T23:00:52-05:00
+
+¿COMO LE HAGO PARA?:
+ver los calendarios de x usuario: http://localhost:3000/sistema/listar_calendarios
+ver los eventos de x calendario: http://localhost:3000/sistema/listar_eventos
+anadir un evento e a un calendario x: http://localhost:3000/sistema/insertar_evento
+actualizar un evento e en un calendariox:http://localhost:3000/sistema/actualizar_evento
+eliminar un evento e en un calendario x: http://localhost:3000/sistema/eliminar_evento
+
