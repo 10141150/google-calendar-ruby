@@ -1,0 +1,22 @@
+<h2> ELIMINAR UN EVENTO </h2>
+<%= form_tag({:controller => "sistema", :action => "event_delete"}, :method => "get") do %>
+   <%= label_tag "lbl_key", "developper key:" %>
+   <%= text_field_tag "txt_key", "", :size => 5, :maxlenght => 5, :placeholder => "key", :required => "required" %>
+   
+   <%= label_tag "lbl_path_key", "path key p12/json :" %>
+   <%= text_field_tag "txt_path_key", "", :size => 5, :maxlenght => 5, :placeholder => "path_key", :required => "required" %>
+   
+   <%= label_tag "lbl_cuenta_developper", "cuenta developper :" %>
+   <%= text_field_tag "txt_cuenta_developper", "", :size => 5, :maxlenght => 5, :placeholder => "cuenta_developper", :required => "required" %>
+   
+   <%= label_tag "lbl_calendar_id", "calendar ID :" %>
+   <%= text_field_tag "txt_calendar_id", "", :size => 5, :maxlenght => 5, :placeholder => "calendar_id", :required => "required" %>
+   
+   <%= label_tag "lbl_event_id", "Event ID :" %>
+   <%= text_field_tag "txt_event_id", "", :size => 5, :maxlenght => 5, :placeholder => "event_id", :required => "required" %>
+   
+
+   <br />
+   <%= submit_tag "Enviar" %>
+<% end %>
+

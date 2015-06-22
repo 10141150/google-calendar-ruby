@@ -1,0 +1,9 @@
+<ul>
+<% @items.each do |item| %>
+ <li>EVENTO:<%= item['summary'] %></li>
+ <li>ID:<%= item['id'] %></li>
+ <li>INICIO:<%= item['start'].dateTime %></li>
+ <li>FIN:<%= item['end'].dateTime %></li>
+  <br>
+<% end %>
+</ul>
