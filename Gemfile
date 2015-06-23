@@ -44,3 +44,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'coffee-script-source', '1.8.0'
 gem 'google-api-client', '~> 0.7.0', require: 'google/api_client'
+
+gem 'haml'
+gem 'haml-rails'

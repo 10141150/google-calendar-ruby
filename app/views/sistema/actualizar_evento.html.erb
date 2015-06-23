@@ -1,34 +1,33 @@
-<h2> ACTUALIZAR UN EVENTO </h2>
+<h2> <%=t('updevent') %> </h2>
 <%= form_tag({:controller => "sistema", :action => "event_update"}, :method => "get") do %>
-   <%= label_tag "lbl_key", "developper key:" %>
+   <%= label_tag "lbl_key", t('dev') %>
    <%= text_field_tag "txt_key", "", :size => 5, :maxlenght => 5, :placeholder => "key", :required => "required" %>
    
-   <%= label_tag "lbl_path_key", "path key p12/json :" %>
+   <%= label_tag "lbl_path_key", t('pathp12') %>
    <%= text_field_tag "txt_path_key", "", :size => 5, :maxlenght => 5, :placeholder => "path_key", :required => "required" %>
    
-   <%= label_tag "lbl_cuenta_developper", "cuenta developper :" %>
+   <%= label_tag "lbl_cuenta_developper", t('accountdev') %>
    <%= text_field_tag "txt_cuenta_developper", "", :size => 5, :maxlenght => 5, :placeholder => "cuenta_developper", :required => "required" %>
    
-   <%= label_tag "lbl_calendar_id", "calendar ID :" %>
+   <%= label_tag "lbl_calendar_id", t('calid') %>
    <%= text_field_tag "txt_calendar_id", "", :size => 5, :maxlenght => 5, :placeholder => "calendar_id", :required => "required" %>
    
-   <%= label_tag "lbl_time_min", "Time Min :" %>
+   <%= label_tag "lbl_time_min", t('timemin') %>
    <%= text_field_tag "txt_time_min", "", :size => 5, :maxlenght => 5, :placeholder => "time_min", :required => "required" %>
    
-   <%= label_tag "lbl_time_max", "Time Max :" %>
+   <%= label_tag "lbl_time_max", t('timemax') %>
    <%= text_field_tag "txt_time_max", "", :size => 5, :maxlenght => 5, :placeholder => "time_max", :required => "required" %>
    
-   <%= label_tag "lbl_summary", "Summary :" %>
+   <%= label_tag "lbl_summary", t('summ') %>
    <%= text_field_tag "txt_summary", "", :size => 5, :maxlenght => 5, :placeholder => "summary", :required => "required" %>
    
-   <%= label_tag "lbl_location", "Location :" %>
+   <%= label_tag "lbl_location", t('loc') %>
    <%= text_field_tag "txt_location", "", :size => 5, :maxlenght => 5, :placeholder => "location", :required => "required" %>
    
-   <%= label_tag "lbl_event_id", "Event ID :" %>
+   <%= label_tag "lbl_event_id", t('eventid') %>
    <%= text_field_tag "txt_event_id", "", :size => 5, :maxlenght => 5, :placeholder => "Event ID", :required => "required" %>
    
    
    <br />
-   <%= submit_tag "Enviar" %>
+   <%= submit_tag t('send') %>
 <% end %>
-
