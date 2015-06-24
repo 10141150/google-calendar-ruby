@@ -21,8 +21,8 @@
 
 es:
   listevent: "LISTADO DE EVENTOS"
-  listcal: "LISTADO DE CALENDARIOS DE X USUARIO"
-  updevent: "ACTUALIZAR UN EVENTO"
+  listcal: "LISTADO DE CALENDARIOS"
+  updevent: "ACTUALIZAR EVENTO"
   elimevent: "ELIMINAR EVENTO"
   insevent: "INSERTAR EVENTO"
   dev: "Clave de desarrollador: "
