@@ -1,4 +1,4 @@
-<h2> <%=t('listevent') %> </h2>
+<h2> <%=t('listcal') %> </h2>
 <%= form_tag({:controller => "sistema", :action => "calendars_list"}, :method => "get") do %>
    <%= label_tag "lbl_key", t('dev') %>
    <%= text_field_tag "txt_key", "", :size => 5, :maxlenght => 5, :placeholder => t('textkey'), :required => "required" %>

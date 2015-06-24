@@ -20,7 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
-  listevent: "LISTADO DE CALENDARIOS DE X USUARIO"
+  listevent: "LISTADO DE EVENTOS"
+  listcal: "LISTADO DE CALENDARIOS DE X USUARIO"
   updevent: "ACTUALIZAR UN EVENTO"
   elimevent: "ELIMINAR EVENTO"
   insevent: "INSERTAR EVENTO"
@@ -44,3 +45,4 @@ es:
   textkey: "Clave"
   p12json: "Ruta_Clave"
   acc: "Cuenta_Developer"
+  cal: "ID_Calendario"
