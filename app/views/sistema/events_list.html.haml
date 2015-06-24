@@ -1,0 +1,12 @@
+%ul
+  - @items.each do |item|
+    %li= t('ev')  
+    = item['summary']
+    %li= t('idd')  
+    = item['id']
+    %li= t('startt') 
+    = item['start'].dateTime
+    %li= t('endd') 
+    = item['end'].dateTime
+    %br/
+    %p --------------------

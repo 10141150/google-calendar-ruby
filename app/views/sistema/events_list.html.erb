@@ -1,9 +1,0 @@
-<ul>
-<% @items.each do |item| %>
- <li><%= t('ev')  item['summary'] %></li>
- <li><%= t('idd')  item['id'] %></li>
- <li><%= t('startt') item['start'].dateTime %></li>
- <li><%= t('endd') item['end'].dateTime %></li>
-  <br>
-<% end %>
-</ul>

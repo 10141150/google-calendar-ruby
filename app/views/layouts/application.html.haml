@@ -2,9 +2,25 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Inb
+    %title Google Calendar en Ruby on Rails
+    %link{:href => "http://fonts.googleapis.com/css?family=Exo", :rel => "stylesheet", :type => "text/css"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    %header
+      %nav.be-red.white.large-padding
+        %ul.row.center-xs.middle-xs
+          %li.col-md
+            %h1#logo.no-margin
+              %i.fa.fa-home.fa-fw>
+                Google Calendar en Ruby On Rails
   %body
     = yield
+    .footer.clearfix
+      .container_12
+        %p.grid_12
+          %a{:href => ""} Informacion Legal
+          |
+          %a{:href => ""} Politicas de Privacidad
+          |
+          %a{:href => ""} Copyright © Centro de Computo INB 2015
