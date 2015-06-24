@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Inb</title>
+  <title>Google Calendar en Ruby on Rails</title>
+ <link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <header>
+		<nav class= "be-red white large-padding">
+			<ul class="row center-xs middle-xs">
+				<li class ="col-md">
+					<h1 class="no-margin" id="logo"> <i class="fa fa-home fa-fw"></i>&nbsp; Google Calendar en Ruby On Rails</h1>
+				</li>
+				</ul>
+		</nav>
+	</header>
 </head>
 <body>
-
 <%= yield %>
+
+
+<div class="footer clearfix">
+			<div class="container_12">
+				<p class="grid_12"><a href="">Informacion Legal</a> | <a href="">Politicas de Privacidad </a> | <a href="">Copyright &copy; Centro de Computo INB 2015</a></p>
+			</div>
+		</div>
 
 </body>
 </html>
+ 

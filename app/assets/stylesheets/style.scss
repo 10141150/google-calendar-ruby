@@ -1,0 +1,93 @@
+$color: white;
+
+@mixin estilo-border($grosor, $altura, $ancho, $radio){
+	border:solid $grosor white;
+	height: $altura;
+	width: $ancho;
+	border-radius: $radio;
+
+}
+#div1 { 
+	@include estilo-border(1px, 40px, 400px, 50px);
+  margin: 0 auto;
+  text-align: center;
+	
+}
+
+.estilo-div {
+	background-color: darken($color, 10%);
+
+}
+
+#div2{
+	@include estilo-border(3px, 80px, 300px, 10px);
+  
+}
+
+
+
+html,body{
+	margin: 0px;
+	font-family: 'Exo', sans-serif;
+	
+
+}
+
+.be-red{
+	background-color: rgb(162,92,135);
+}
+
+.white{
+	color: white;
+}
+
+.large-padding{
+		
+		padding: 15px 10px;
+
+}
+
+#logo{
+	font-size: 1.2em;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.center-xs {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.middle-xs {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.col-md{
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
