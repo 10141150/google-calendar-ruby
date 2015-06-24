@@ -1,33 +1,36 @@
-<h2> <%=t('updevent') %> </h2>
+
+<div id = 'div1' class = "estilo-div">
+<h2> <%=t('updevent') %> </h2></div></br>
+
+<div class="intro grid_3 push_9" align="right">
 <%= form_tag({:controller => "sistema", :action => "event_update"}, :method => "get") do %>
    <%= label_tag "lbl_key", t('dev') %>
-   <%= text_field_tag "txt_key", "", :size => 5, :maxlenght => 5, :placeholder => "key", :required => "required" %>
+   <%= text_field_tag "txt_key", "", :size => 50, :maxlenght => 50, :placeholder => "key", :required => "required" %><br />
    
    <%= label_tag "lbl_path_key", t('pathp12') %>
-   <%= text_field_tag "txt_path_key", "", :size => 5, :maxlenght => 5, :placeholder => "path_key", :required => "required" %>
+   <%= text_field_tag "txt_path_key", "", :size => 50, :maxlenght => 50, :placeholder => "path_key", :required => "required" %><br />
    
    <%= label_tag "lbl_cuenta_developper", t('accountdev') %>
-   <%= text_field_tag "txt_cuenta_developper", "", :size => 5, :maxlenght => 5, :placeholder => "cuenta_developper", :required => "required" %>
+   <%= text_field_tag "txt_cuenta_developper", "", :size => 50, :maxlenght => 50, :placeholder => "cuenta_developper", :required => "required" %><br />
    
    <%= label_tag "lbl_calendar_id", t('calid') %>
-   <%= text_field_tag "txt_calendar_id", "", :size => 5, :maxlenght => 5, :placeholder => "calendar_id", :required => "required" %>
+   <%= text_field_tag "txt_calendar_id", "", :size => 50, :maxlenght => 50, :placeholder => "calendar_id", :required => "required" %><br />
    
    <%= label_tag "lbl_time_min", t('timemin') %>
-   <%= text_field_tag "txt_time_min", "", :size => 5, :maxlenght => 5, :placeholder => "time_min", :required => "required" %>
+   <%= text_field_tag "txt_time_min", "", :size => 50, :maxlenght => 5, :placeholder => "time_min", :required => "required" %><br />
    
    <%= label_tag "lbl_time_max", t('timemax') %>
-   <%= text_field_tag "txt_time_max", "", :size => 5, :maxlenght => 5, :placeholder => "time_max", :required => "required" %>
+   <%= text_field_tag "txt_time_max", "", :size => 50, :maxlenght => 50, :placeholder => "time_max", :required => "required" %><br />
    
    <%= label_tag "lbl_summary", t('summ') %>
-   <%= text_field_tag "txt_summary", "", :size => 5, :maxlenght => 5, :placeholder => "summary", :required => "required" %>
+   <%= text_field_tag "txt_summary", "", :size => 50, :maxlenght => 50, :placeholder => "summary", :required => "required" %><br />
    
    <%= label_tag "lbl_location", t('loc') %>
-   <%= text_field_tag "txt_location", "", :size => 5, :maxlenght => 5, :placeholder => "location", :required => "required" %>
+   <%= text_field_tag "txt_location", "", :size => 50, :maxlenght => 50, :placeholder => "location", :required => "required" %><br />
    
    <%= label_tag "lbl_event_id", t('eventid') %>
-   <%= text_field_tag "txt_event_id", "", :size => 5, :maxlenght => 5, :placeholder => "Event ID", :required => "required" %>
-   
-   
-   <br />
+   <%= text_field_tag "txt_event_id", "", :size => 50, :maxlenght => 50, :placeholder => "Event ID", :required => "required" %><br /><br />
    <%= submit_tag t('send') %>
 <% end %>
+
+</div>

@@ -47,3 +47,5 @@ gem 'google-api-client', '~> 0.7.0', require: 'google/api_client'
 
 gem 'haml'
 gem 'haml-rails'
+gem 'font-awesome-sass'
+gem 'sass'

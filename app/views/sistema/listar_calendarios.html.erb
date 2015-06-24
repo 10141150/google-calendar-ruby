@@ -1,14 +1,17 @@
-<h2> <%=t('listcal') %> </h2>
+<div id = 'div1' class = "estilo-div">
+	<h2> <%=t('listcal') %> </h2></div></br>
+<div class="intro grid_3 push_9" align="right">
 <%= form_tag({:controller => "sistema", :action => "calendars_list"}, :method => "get") do %>
    <%= label_tag "lbl_key", t('dev') %>
-   <%= text_field_tag "txt_key", "", :size => 5, :maxlenght => 5, :placeholder => t('textkey'), :required => "required" %>
+   <%= text_field_tag "txt_key", "", :size => 50, :maxlenght => 50, :placeholder => t('textkey'), :required => "required" %><br />
    
    <%= label_tag "lbl_path_key", t('pathp12') %>
-   <%= text_field_tag "txt_path_key", "", :size => 5, :maxlenght => 5, :placeholder => t('p12json'), :required => "required" %>
+   <%= text_field_tag "txt_path_key", "", :size => 50, :maxlenght => 50, :placeholder => t('p12json'), :required => "required" %><br />
    
    <%= label_tag "lbl_cuenta_developper", t('accountdev') %>
-   <%= text_field_tag "txt_cuenta_developper", "", :size => 5, :maxlenght => 5, :placeholder => t('acc'), :required => "required" %>
+   <%= text_field_tag "txt_cuenta_developper", "", :size => 50, :maxlenght => 50, :placeholder => t('acc'), :required => "required" %><br />
    
    <br />
    <%= submit_tag t('send') %>
 <% end %>
+</div>
